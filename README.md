@@ -1,1 +1,1 @@
-# lichess-standings
+# lichess-college-standings
