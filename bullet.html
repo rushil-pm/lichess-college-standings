@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Players Bullet Standings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favIcon/apple-icon-57x57.png?" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favIcon/apple-icon-60x60.png?" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favIcon/apple-icon-72x72.png/" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favIcon/apple-icon-76x76.png?" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favIcon/apple-icon-114x114.png?" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favIcon/apple-icon-120x120.png?" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favIcon/apple-icon-144x144.png?" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favIcon/apple-icon-152x152.png?" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favIcon/apple-icon-180x180.png?" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favIcon/android-icon-192x192.png?" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favIcon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favIcon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favIcon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favIcon/manifest.json?" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favIcon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="Logos">
+            <img src="images/IITR-Logo.svg" alt="IITR-Logo" height="100" width="100">
+            <img id="line-img" src="images/Straight-Line.svg" alt="Straight-Line" height="100" width="10">
+            <img src="images/Chess-club-Logo.png" alt="Chess-club-Logo" height="100" width="100">
+        </div>
+
+        <div class="Heading">
+            IIT Roorkee Chess Club
+        </div>
+
+        <div class="Heading2">
+            Leaderboard
+        </div>
+
+    </header>
+
+    <div class="Leaderboard">
+
+        <div style="width: 25%;">
+            <div class="FormatName">
+                Bullet
+            </div>
+            <div class="MedalLogo">
+                <img src="images/Ammo.png" alt="Bullet">
+            </div>
+        </div>
+
+        <div style="width: 22%;">
+            <div class="PlayerRank" style="color: #ffd700;">
+                #1
+            </div>
+            <div class="MedalLogo">
+                <img src="images/Gold-Medal.png" alt="Gold" height="110px" width="83px">
+            </div>
+            <div id="P1Name" class="PlayerName"> </div>
+            <div id="P1Rating" class="PlayerRating"> </div>
+        </div>
+
+        <div style="width: 22%;">
+            <div class="PlayerRank" style="color: #c0c0c0;">
+                #2
+            </div>
+            <div class="MedalLogo">
+                <img src="images/Silver-Medal.png" alt="Gold" height="110px" width="83px">
+            </div>
+            <div id="P2Name" class="PlayerName"> </div>
+            <div id="P2Rating" class="PlayerRating"> </div>
+        </div>
+
+        <div style="width: 22%;">
+            <div class="PlayerRank" style="color: #926455;">
+                #3
+            </div>
+            <div class="MedalLogo">
+                <img src="images/Bronze-Medal.png" alt="Gold" height="110px" width="83px">
+            </div>
+            <div id="P3Name" class="PlayerName"> </div>
+            <div id="P3Rating" class="PlayerRating"> </div>
+        </div>
+        
+    </div>
+
+    <div class="Phone-Leaderboard">
+        <br>
+        <div class="Phone-Format">
+            <span><img src="images/Ammo.png" alt="Bullet"></span>  
+            <span>Bullet</span>
+        </div>
+
+        <div style="display: flex;">
+
+            <div style="width: 33%; margin-top: 50px;">
+                <div style="color: #c0c0c0; text-align: center; font-size: 26px;">
+                    #2
+                </div>
+                <div class="MedalLogo" style="margin-top: 3px;">
+                    <img src="images/Silver-Medal.png" alt="Gold" height="70px" width="50px">
+                </div>
+                <div id="P2NamePhone" class="PlayerName" style="font-size: 17.5px;"> </div>
+                <div id="P2RatingPhone" class="PlayerRating" style="font-size: 22px;"> </div>
+            </div>
+        
+            <div style="width: 33%; margin-top: 20px;">
+                <div style="color: #ffd700; text-align: center; font-size: 26px;">
+                    #1
+                </div>
+                <div class="MedalLogo" style="margin-top: 3px;">
+                    <img src="images/Gold-Medal.png" alt="Gold" height="70px" width="50px">
+                </div>
+                <div id="P1NamePhone" class="PlayerName" style="font-size: 17.5px;"> </div>
+                <div id="P1RatingPhone" class="PlayerRating" style="font-size: 22px;"> </div>
+            </div>
+
+            <div style="width: 33%; margin-top: 50px;">
+                <div style="color: #926455; text-align: center; font-size: 26px;"">
+                    #3
+                </div>
+                <div class="MedalLogo"  style="margin-top: 3px;">
+                    <img src="images/Bronze-Medal.png" alt="Gold" height="70px" width="50px">
+                </div>
+                <div id="P3NamePhone" class="PlayerName" style="font-size: 17.5px;"> </div>
+                <div id="P3RatingPhone" class="PlayerRating" style="font-size: 22px;"> </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="Buttons">
+            <div>
+                <button class="FormatButtons Selected"><a href="bullet.html">Bullet</a></button>
+                <button class="FormatButtons"><a href="index.html">Blitz</a></button>
+                <button class="FormatButtons"><a href="rapid.html">Rapid</a></button>
+            </div>
+
+            <div id="T1" style="margin-left: auto;">
+                <button class="TypeButtons Selected"><a href="bullet.html">All Players</a></button>
+                <button class="TypeButtons"><a href="bullet-current.html">Current Players</a></button>
+            </div>
+
+            <div id="T2" style="margin-left: auto;">
+                <button class="TypeButtons Selected"><a href="bullet.html">All</a></button>
+                <button class="TypeButtons"><a href="bullet-current.html">Current</a></button>
+            </div>
+            
+        </div>
+
+        <div class="Container" style="display: flex;">
+            <table id = "standingsAllBullet"> </table>
+            <table id = "standingsAllBulletPhone" style="width: 100%;"></table>
+
+            <div class="Pop-up None" id="pop-up">
+                <div id="pop-up-rank"></div>
+
+                <div style="margin-top: 30px;">
+                    <span class="General">Name :</span>
+                    <span id="pop-up-name"></span>
+                </div>
+
+                <div>
+                    <span class="General">Branch :</span>
+                    <span id="pop-up-branch"></span>
+                </div>
+
+                <div>
+                    <span class="General">Pass-out :</span>
+                    <span id="pop-up-pass"></span>
+                </div>
+
+                <div style="margin-top: 25px;">
+                    <span class="General">Lichess :</span>
+                    <span id="pop-up-lichess"></span>
+                </div>
+
+                <div>
+                    <span><img src="images/Dot.svg" alt="dot" height="9px" width="9px" style="margin-bottom: 2px;"></span>
+                    <span class="General">Active :</span>
+                    <span id="pop-up-active"></span>
+                </div>
+
+                <div id="pop-up-connect" style="margin-top: 25px; display: none;">
+                    <span class="General" style="margin: 0; margin-top: 3px;">Connect :</span>
+                    <div id="pop-up-Image"></div>
+                </div>
+            </div>
+
+            <div class="ontop None" id="ontop">
+                <div class="Pop-up-Phone None" id="pop-up-Phone">
+                    <div id="pop-up-rank-Phone">#2</div>
+    
+                    <div style="margin-top: 30px;">
+                        <span class="General">Name :</span>
+                        <span id="pop-up-name-Phone"></span>
+                    </div>
+    
+                    <div>
+                        <span class="General">Branch :</span>
+                        <span id="pop-up-branch-Phone"></span>
+                    </div>
+    
+                    <div>
+                        <span class="General">Pass-out :</span>
+                        <span id="pop-up-pass-Phone"></span>
+                    </div>
+    
+                    <div style="margin-top: 25px;">
+                        <span class="General">Lichess :</span>
+                        <span id="pop-up-lichess-Phone"></span>
+                    </div>
+    
+                    <div>
+                        <span><img src="images/Dot.svg" alt="dot" height="9px" width="9px" style="margin-bottom: 2px;"></span>
+                        <span class="General">Active :</span>
+                        <span id="pop-up-active-Phone"></span>
+                    </div>
+    
+                    <div id="pop-up-connect-Phone" style="margin-top: 25px; display: none;">
+                        <span class="General" style="margin: 0; margin-top: 3px;">Connect :</span>
+                        <div id="pop-up-Image-Phone" style="margin-top: 0;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div style=" height: 1px"></div>
+        <div style="margin-top: 40px">
+            <span class="Title">About us</span>
+            <img id="footerimg" src="images/vc.svg" alt="Straight-Line">
+            <img id="newfooterimg" src="images/newline.svg" alt="Straight-Line">
+        </div>
+
+        <div class="Content">
+            <div class="Info"> 
+                <div>Chess Club IITR</div>
+                <div style="margin-top: 15px;">
+                    <a href="https://www.instagram.com/chessclub_iitr/" target="_blank"><img src="images/Instagram-Logo.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/iitroorkeechess/" target="_blank"><img src="images/Facebook-Logo.png" alt="Facebook"></a>
+                    <a href="https://lichess.org/team/iit-roorkee-chess-club" target="_blank"><img src="images/Lichess-Logo.png" alt="Lichess"></a>
+                    <a href="https://iitr.ac.in/Campus%20Life/Sports/Chess.html" target="_blank"><img src="images/Website-Logo.svg" alt="Website"></a>    
+                </div>
+            </div>
+            <div style="width: 40%;">
+                <div>Contact : </div>
+                <table id="footerTable">
+                    <tr>
+                        <td>Developer</td>
+                        <td><a href="https://www.linkedin.com/in/rushil-motwani-995209226" target="_blank"><img src="images/LinkedIn-Color-Logo.png" alt="LinkedIn"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    
+    <script src = "main.js"></script>
+</body>
+</html>

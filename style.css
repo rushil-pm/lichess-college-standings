@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1C1C1C;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Logos{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    font-size: 43px;
+    
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight: lighter;
+}
+
+.Heading2{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.Leaderboard{
+    display: flex;
+    width: 90%;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background: #3C3C3C;;
+}
+
+.FormatName{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.FormatIcon{
+    margin-top: 7px;
+    text-align: center;
+}
+
+.PlayerRank{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.MedalLogo{
+    margin-top: 12px;
+    text-align: center;
+}
+
+.PlayerName{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.PlayerName:hover{
+    cursor: pointer;
+}
+
+.PlayerRating{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 30px;
+}
+
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Buttons{
+    margin-top: 40px;
+    display: flex;
+    width: 71.5%;
+}
+
+#T1 #T2{
+    margin-left: auto;
+}
+
+.FormatButtons, .TypeButtons{
+    height: 35px;
+    padding: 6px 15px;
+    border-radius: 10px 10px 0px 0px;
+    background: #2C2C2C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.Selected{
+    color: #232324;
+    border: 1.122px solid #2C2C2C;
+    background: #FFF;
+    z-index: 1;
+}
+
+table{
+    width: 72%;
+    border: 2px solid rgba(123, 123, 123, 0.75);
+}
+
+td, th{
+    border: 2px solid rgba(123, 123, 123, 0.75);
+    background: #232324;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    color: #CBCBCB;
+    font-size: 20.2px;
+    font-weight: 700;
+}
+
+td{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+    max-width: 100px;
+    overflow: auto;
+    white-space: nowrap; 
+
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+td::-webkit-scrollbar{
+    display: none;
+}
+
+.Pop-up, .Pop-up-Phone{
+    height: 350px;
+    width: 28%;
+    margin-top: 3px;
+    margin-left: 1%;
+    border-radius: 11px;
+    background: #3B3B3B;
+    position: sticky;
+    top: 5%;
+}
+
+#pop-up-rank, #pop-up-rank-Phone{
+    margin-top: 35px;
+    margin-left: 43%;
+    color: #CBCBCB;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Pop-up div, .Pop-up-Phone div{
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 9%;
+}
+
+.General{
+    color: #9F9F9F;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-weight: 550;
+}
+
+.Pop-up-Phone .General{
+    font-size: 19px;
+}
+
+#pop-up-Image, #pop-up-Image-phone{
+    margin: 0;
+    margin-left: 4%;
+}
+
+.ontop {
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;		
+}
+
+.Title{
+    margin-left: 7%;
+    color: #181818;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 100px;
+    height: 250px;
+    background: #FFF;
+}
+
+#footerimg{ 
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+.Content{
+    margin-top: 25px;
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.Info{
+    width : 60%;
+    margin-left: 9%;
+}
+
+.Info img{
+    height: 38px;
+    width: 38px;
+    padding: 2px;
+}
+
+#footerTable{
+    border: 0;
+    width: 160px;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+
+#footerTable td{
+    background-color: #FFFFFF;
+    border: 0;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 0;
+}
+
+#footerTable img{
+    margin-bottom: -5px;
+    margin-top: 3px;
+    width: 28px;
+    height: 28px;
+}
+
+.None{
+    display: none;
+}
+
+.Phone-Leaderboard{
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    .Logos img{
+        height: 70px;
+        width: 70px;
+        gap: 0px;
+    }
+
+    #line-img{
+        width: 5px;
+    }
+
+    .Heading{
+        margin-top: 13px;
+        font-size: 29px;
+    }
+    
+    .Heading2{
+        margin-top: 20px;
+        font-size: 26.5px;
+    }
+
+    .Leaderboard{
+        display: none;
+    }
+
+    .Phone-Leaderboard{
+        display: block;
+        width: 88%;
+        height: 340px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        background: #3C3C3C;    
+    }
+
+    .Phone-Format img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .Phone-Format{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Phone-Format span {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 26px;
+        font-weight: 600;
+    };
+}
+
+@media all and (max-width: 700px){
+    .Title{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    #footerimg{
+        display: none;
+    }
+
+    #newfooterimg{
+        margin-bottom: 4px;
+        margin-left: 5%;
+    }
+
+    #footerTable td{
+        font-size: 18px;
+    }
+    
+    #footerTable img{
+        width: 24px;
+        height: 24px;
+    }
+
+    #footerTable{
+        width: 130px;
+    }
+
+    .Content{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .Info img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .Info{
+        width: 45%;
+    }
+
+    .Content{
+        gap: 3%;
+    }
+}
+
+@media all and (min-width: 700px){
+    #newfooterimg{
+        display: none;
+    }
+}
+
+@media all and (min-width: 970px){
+    #standingsAllBlitzPhone{
+        display: none;
+    }
+
+    #standingsCurrBlitzPhone{
+        display: none;
+    }
+
+    #standingsAllBulletPhone{
+        display: none;
+    }
+
+    #standingsCurrBulletPhone{
+        display: none;
+    }
+
+    #standingsAllRapidPhone{
+        display: none;
+    }
+
+    #standingsCurrRapidPhone{
+        display: none;
+    }
+
+    #T2{
+        display: none;
+    }
+
+    #ontop{
+        display: none;
+    }
+
+    #pop-up-Phone{
+        display: none;
+    }
+}
+
+@media all and (max-width: 969.9px){
+    #standingsAllBlitz{
+        display: none;
+    }
+
+    #standingsCurrBlitz{
+        display: none;
+    }
+
+    #standingsAllBullet{
+        display: none;
+    }
+
+    #standingsCurrBullet{
+        display: none;
+    }
+    
+    #standingsAllRapid{
+        display: none;
+    }
+
+    #standingsCurrRapid{
+        display: none;
+    }
+
+    #pop-up{
+        display: none;
+    }
+
+    #T1{
+        display: none;
+    }
+
+    .Buttons{
+        width: 100%;
+    }
+
+    .FormatButtons, .TypeButtons{
+        height: 35px;
+        padding: 1px 7px;
+        border-radius: 10px 10px 0px 0px;
+        background: #2C2C2C;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16.3px;
+        font-weight: 500;
+    }
+
+    .Selected{
+        color: #232324;
+        border: 1px solid #2C2C2C;
+        background: #FFF;
+        z-index: 1;
+    }
+
+    th{
+        font-size: 16.2px;
+    }
+    
+    td{
+        font-size: 15.5px;
+    }
+
+    .Pop-up-Phone{
+        width: 310px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: #3B3B3B;
+    }
+
+    .Opacity{
+        opacity: 0.3;
+    }
+}
